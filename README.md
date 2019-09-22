@@ -4,7 +4,7 @@ Hosting URL :- https://ravikiranfyle.herokuapp.com/.<br/>
 GitHub Link :- https://github.com/pilliravikiran/ravikiranfyle.<br/>
 END-POINT -1 <br/>
 Curl Script :- curl -X GET "https://ravikiranfyle.herokuapp.com/api/branches/autocomplete?q=RTGS&limit=3&offset=0" <br/>
-![](IMAGE 1.png)
+
 END-POINT -2 <br/>
 Curl Script :- curl -X GET "https://ravikiranfyle.herokuapp.com/api/branches?q=BANGALORE&limit=4&offset=0" <br/>
 
