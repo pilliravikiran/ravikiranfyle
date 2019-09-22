@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  .ravi { 
+  display: block;
+  float: left;
+  font-size: 1em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 7em;
+  margin-right: 0;
+  font-weight: italic;
+}
+
+#kiran h1{
+  font-size: 2.5em;
+    text-shadow: 3px 2px white;
+}
+.ravi p{
+  font-size: 1.1em;
+    
+}
+.ravi button {
+  background-color: #3FA509; /* Green */
+  border: none;
+  color: white;
+  padding: 9px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.ravi button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.ravi button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.ravi button:hover span {
+  padding-right: 25px;
+}
+
+.ravi button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #3FA509;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #3FA509;
+  color: white;
+}
+</style>
+<title>Fyle</title>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Fyle Backend Test</a>
+   <li style="float:right"><a href="https://www.linkedin.com/in/ravi-kiran-50ba43166/" >About</a></li>
+     <li style="float:right"><a href="https://github.com/pilliravikiran/ravikiranfyle" target="_blank">Source Code</a></li>
+</div>
+
+<div class ="ravi">
+    <div id ="kiran">
+
+      <h1> <center>Retreiving Bank Details</center></h1>
+    </div>
+    <br>
+    <h2><u>End Point -1</u></h2>
+    <h3>Autocomplete API to return possible matches based on the branch name ordered by IFSC code (ascending order) with limit and offset.</h3>
+    <p>
+      a.&nbsp;&nbsp;Endpoint: /api/branches/autocomplete?q=<><br>
+      b.&nbsp;&nbsp;Example: /api/branches/autocomplete?q=RTGS&limit=3&offset=0
+    </p >
+    <button value ="submit" name ="submit" onclick="window.location.href = 'https://fylecodingtest.herokuapp.com/api/branches/autocomplete?q=RTGS&limit=3&offset=0'" target="_blank"><span>Heroku Server</span></button>
+    <button value ="submit" name ="submit" onclick="window.location.href = 'http://localhost:3000/api/branches/autocomplete?q=RTGS&limit=3&offset=0'" target="_blank"><span>Local  Server</span></button>
+ 
+
+    <h2><u>End Point -2</u></h2>
+        <h3>Search API to return possible matches across all columns and all rows, ordered by IFSC code (ascending order) with limit and offset.</h3>
+          
+    a.&nbsp;&nbsp;Endpoint: /api/branches?q=<><br>
+    b.&nbsp;&nbsp;Example: /api/branches?q=Bangalore&limit=4&offset=0
+    
+</p>
+
+    <button value ="submit" name ="submit" onclick="window.location.href = 'https://fylecodingtest.herokuapp.com/api/branches?q=BANGALORE&limit=4&offset=0'" target="_blank"><span>Heroku Server</span></button>
+    <button value ="submit" name ="submit" onclick="window.location.href = 'http://localhost:3000/api/branches?q=BANGALORE&limit=4&offset=0'" target="_blank"><span>Local  Server</span></button>
+ 
+
+
+
+
+  </div>
+
+
+</body>
+</html>
